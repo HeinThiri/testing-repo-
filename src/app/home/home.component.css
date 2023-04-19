@@ -687,7 +687,60 @@ a:hover{
 
 
 
-
+.butn-style1 {
+    color: #fff;
+    padding: 16px 30px;
+    text-transform: uppercase;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s linear;
+    z-index: 1;
+    background: #ee421c;
+    border: none;
+    border-radius: 4px;
+    line-height: normal;
+    font-weight: bold;
+    vertical-align: top;
+}
+.butn-style1:before {
+    content: "";
+    position: absolute;
+    top: -71px;
+    right: 0px;
+    bottom: 0;
+    width: 115%;
+    height: 322%;
+    left: -1px;
+    transform: translateX(-100%) rotate(180deg);
+    z-index: -1;
+    transition: all 0.4s linear;
+    background: #ef4746;
+}
+.butn-style1:hover:before, .butn-style1:active:before, .butn-style1:focus:before {
+    transform: translateX(0) rotate(195deg);
+}
+.butn-style1:hover, .butn-style1:active, .butn-style1:focus {
+    color: #fff;
+}
+.butn-style1:hover:before, .butn-style1:active:before, .butn-style1:focus:before {
+    transform: translateX(0) rotate(195deg);
+}
+.butn-style1:before {
+    content: "";
+    position: absolute;
+    top: -71px;
+    right: 0px;
+    bottom: 0;
+    width: 115%;
+    height: 322%;
+    left: -1px;
+    transform: translateX(-100%) rotate(180deg);
+    z-index: -1;
+    transition: all 0.4s linear;
+    background: #ef4746;
+}
 
 
 
